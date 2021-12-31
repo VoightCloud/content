@@ -52,3 +52,10 @@ release_tools/artifacts
 
 # Ignore the test profile that utils/add_platform_rule.py creates
 ocp4/profiles/test.profile
+/.idea/.gitignore
+/.idea/content.iml
+/.idea/dbnavigator.xml
+/.idea/libraries/groovy_2_4_17.xml
+/.idea/misc.xml
+/.idea/modules.xml
+/.idea/vcs.xml
