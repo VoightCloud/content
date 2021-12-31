@@ -58,10 +58,10 @@ podTemplate(label: "build",
 //                                // Clean up the old ISO file
 //                                sh "rm ${ksisoname}"
 ////                                sh "curl -k -s -X DELETE https://192.168.137.7:8006/api2/json/nodes/ugli/storage/local/content/local:iso/${ksisoname} -H 'Authorization: PVEAPIToken=$packer_username=$packer_token'"
-                            }
-                        } finally {
-                            sh "curl -k -s -X DELETE https://192.168.137.7:8006/api2/json/nodes/ugli/storage/local/content/local:iso/${ksisoname} -H 'Authorization: PVEAPIToken=$packer_username=$packer_token'"
-                        }
+//                            }
+//                        } finally {
+//                            sh "curl -k -s -X DELETE https://192.168.137.7:8006/api2/json/nodes/ugli/storage/local/content/local:iso/${ksisoname} -H 'Authorization: PVEAPIToken=$packer_username=$packer_token'"
+//                        }
                     }
                 }
             }
