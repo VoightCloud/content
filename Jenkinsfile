@@ -65,7 +65,7 @@ podTemplate(label: "build",
 
                 }
             }
-            archiveArtifacts artifacts: 'build/ansible/rhel7-playbook-stig.yml'
+            archiveArtifacts artifacts: 'build/ansible/rhel7-*.yml, build/ssg-rhel7-*.xml'
         }
     }
 }
