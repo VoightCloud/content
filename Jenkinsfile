@@ -29,7 +29,7 @@ podTemplate(label: "build",
                     sh "./build_product --derivatives rhel7"
                 }
             }
-            archiveArtifacts artifacts: 'build/ansible/rhel7-*.yml, build/ssg-rhel7-*.xml'
+            archiveArtifacts artifacts: 'build/ansible/rhel7-*.yml, build/ssg-rhel7-*.xml, build/ansible/centos7-*.yml, build/ssg-centos7-*.xml'
         }
     }
 }
