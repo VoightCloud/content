@@ -25,11 +25,9 @@ podTemplate(label: "build",
                             branches         : scm.branches,
                             extensions       : scm.extensions
                     ])
-                    dir("build"){
-                        sh "cmake ../"
-                        sh "make -j4"
-                    }
+                    sh "./build_product --derivatives rhel7"
                 }
+                archiveArtifacts artifacts: 'build/ansible/rhel7-*.yml, build/ssg-rhel7-*.xml, build/ansible/centos7-*.yml, build/ssg-centos7-*.xml'
             }
         }
     }
